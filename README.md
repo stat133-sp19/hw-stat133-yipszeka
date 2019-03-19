@@ -13,7 +13,7 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 ## Assignments
 
 - [Demo](demo)
-- [hw-stat133-yipszeka](hw-stat133-yipszeka)
+- [hw-stat133/workout01](hw-stat133/workout01)
 - Workout 2
 - Workout 3
 
