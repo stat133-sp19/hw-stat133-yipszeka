@@ -6,14 +6,14 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 - Github username: yipszeka
 - Email: address joycejyka8@berkeley.edu
 - Lab section: 101
-- GSI: Leia Organa
+- GSI: Dodo Qian
 
 -----
 
 ## Assignments
 
 - [Demo](demo)
-- [workout01](hw-stat133-yipszeka)
+- [hw-stat133-yipszeka](hw-stat133-yipszeka)
 - Workout 2
 - Workout 3
 
