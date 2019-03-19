@@ -2,9 +2,9 @@
 
 Private Repository for HW assignments of Stat 133 (Spring 2019)
 
-- Name: Your name (first last)
-- Github username: usrname
-- Email: address [at] email.com
+- Name: Sze Ka Yip
+- Github username: yipszeka
+- Email: address joycejyka8@berkeley.edu
 - Lab section: 101
 - GSI: Leia Organa
 
@@ -13,7 +13,7 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 ## Assignments
 
 - [Demo](demo)
-- [workout01](workout01)
+- [workout01](hw-stat133-yipszeka)
 - Workout 2
 - Workout 3
 
