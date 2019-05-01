@@ -25,6 +25,7 @@ bin_distribution <- function(trials=5, prob=0.5) {
 #a <-bin_distribution(5,0.5)
 #class(a)
 
+#' @import graphics
 #' @export
 plot.bindis <- function(x,...){
   a <- barplot(x$probability, xlab="success", ylab="probability",col = "purple",  names.arg = c(0:(length(x$probability)-1)))

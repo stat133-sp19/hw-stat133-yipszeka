@@ -46,7 +46,7 @@ library(binomial)
 library(ggplot2)
 
 # binomial choose 
-bin_choose(1,1)
+bin_choose()
 #> [1] 1
 
 #binomial probability 
@@ -62,7 +62,7 @@ w
 #> 4       3       0.001      1.000
 
 #binomial distribution
-q <- bin_distribution(5,0.5)
+q <- bin_distribution()
 q
 #>   success probability
 #> 1       0     0.03125

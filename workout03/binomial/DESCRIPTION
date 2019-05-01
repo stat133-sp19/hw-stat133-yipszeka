@@ -23,4 +23,5 @@ Collate:
 Suggests: knitr, 
           rmarkdown,
           testthat
+Imports: ggplot2
 VignetteBuilder: knitr

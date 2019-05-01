@@ -30,15 +30,15 @@ print.binvar <- function(x,...){
 #bin1
 
 #' @export
-summary.binvar <- function(x,...){
+summary.binvar <- function(object,...){
   x<- data.frame(
-    trials= x[1],
-    prob= x[2],
-    mean = aux_mean(x[1],x[2]),
-    variance = aux_variance(x[1],x[2]),
-    mode= aux_mode(x[1],x[2]),
-    skewness= aux_skewness(x[1],x[2]),
-    kurtosis= aux_kurtosis(x[1],x[2]))
+    trials= object[1],
+    prob= object[2],
+    mean = aux_mean(object[1],object[2]),
+    variance = aux_variance(object[1],object[2]),
+    mode= aux_mode(object[1],object[2]),
+    skewness= aux_skewness(object[1],object[2]),
+    kurtosis= aux_kurtosis(object[1],object[2]))
 
   class(x) <-"summary.binvar"
   x

@@ -45,7 +45,7 @@ bin_cumulative <- function(trials=5, prob=0.5) {
 
 # Function plot.bincum()
 
-library(ggplot2)
+#' @import ggplot2
 
 #' @export
 plot.bincum <- function(x,...){
