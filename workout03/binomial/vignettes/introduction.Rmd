@@ -1,0 +1,92 @@
+---
+title: "Introduction to Package bimonial"
+author: "Sze Ka Yip"
+date: "5.1.2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Package bimonial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+##Binomial distribution 
+
+The package 'bimonial' is a implements functions for calculating probabilities of a binomial random variable, and related calculatiion such as the probability distribution, the expected values, variance, related cdf and pdf graphs. 
+
+
+### Function 'bin_choose'
+think about the number of trials and success that you want to calculate and input into the function to calculate bin_choose, how many success can get from the total number of trials. By defult, bin_choose with choose success=1,trials=1.
+
+```{r}
+library(binomial)
+bin_choose()
+```
+
+
+### Function 'bin_probability'
+bin_probability is the functiontion to calculate the probability of the given successs and trials. 
+```{r}
+library(binomial)
+bin_probability(1,2,0.6)
+```
+
+
+
+### Function 'bin_distribution' and plot
+bin distribution is the function to calculative the distribution od the given trials and find probability under each success. By defult, trials =5, probability 0.5
+```{r}
+library(binomial)
+q <- bin_distribution()
+q
+```
+plot the relative probability
+```{r}
+library(binomial)
+plot(q)
+```
+
+###Function 'bin_cumulative' and plot
+bin cumulative is the function to calculative the cumulative value of the given trials and find each probability cumulatively under the number of success. for the example here, we are given success 3 and find the probability and cumulative probability, and at the last 
+```{r}
+library(binomial)
+w<- bin_cumulative(3,0.1)
+w
+```
+plot the relative cumulative probability
+```{r}
+library(binomial)
+library(ggplot2)
+plot(w)
+```
+
+
+###Function 'bin_variable'
+'bin_variable' computes the summary of trials,prob, measures,mean,variance,mode,skewness,kurtosis
+```{r}
+library(binomial)
+bin_variable(trials = 10, p = 0.3)
+summary(bin_variable(trials = 10, p = 0.3))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

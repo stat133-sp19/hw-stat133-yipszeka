@@ -1,0 +1,90 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+## Overview
+
+"binomial" is a package that provides functions to calculate the binomial probability distribution functions
+
+
+### `bin_choose` is a function that computes the number of success in given trials
+### `bin_probability` is a function that computes the probability of getting successes in given trials.
+### `bin_distribution` is a function that computes the probability distribution.
+### `bin_cumulative` is a function that computes the cumulative distribution.
+### `bin_variable` is a function that computes the measurement of the variables.
+
+
+
+## Motivation
+
+This package is to provide binomial probability distribution functions that illustrates binomial concepts. 
+
+
+## Installation
+
+Install the development version from GitHub via the package `"devtools"`:
+
+```{r}
+
+
+# development version from GitHub:
+#install.packages("devtools") 
+# install "binomial" (without vignettes)
+
+devtools::install_github("stat133-sp19/hw-stat133-szekayip/binomial")
+# install "binomial" (with vignettes)
+devtools::install_github("stat133-sp19/hw-stat133-szekayip/binomial", build_vignettes = TRUE)
+
+
+```
+
+
+##Usage 
+
+```{r}
+
+library(binomial)
+
+library(ggplot2)
+
+# binomial choose 
+bin_choose()
+
+#binomial probability 
+bin_probability(1,2,0.6)
+#bin_cumulative
+w<- bin_cumulative(3,0.1)
+w
+
+#binomial distribution
+q <- bin_distribution()
+q
+
+#plot probability density graph
+plot(q)
+
+#plot cumulative graph
+plot(w)
+
+#bin_variable
+bin_variable(10,0.3)
+a <-summary(bin_variable(trials = 10, p = 0.3))
+a
+
+
+```
+
+
+
+
