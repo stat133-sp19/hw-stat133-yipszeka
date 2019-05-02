@@ -4,15 +4,15 @@ Overview
 
 "binomial" is a package that provides functions to calculate the binomial probability distribution functions
 
-### `bin_choose` is a function that computes the number of success in given trials
+##### `bin_choose` is a function that computes the number of success in given trials
 
-### `bin_probability` is a function that computes the probability of getting successes in given trials.
+##### `bin_probability` is a function that computes the probability of getting successes in given trials.
 
-### `bin_distribution` is a function that computes the probability distribution.
+##### `bin_distribution` is a function that computes the probability distribution.
 
-### `bin_cumulative` is a function that computes the cumulative distribution.
+##### `bin_cumulative` is a function that computes the cumulative distribution.
 
-### `bin_variable` is a function that computes the measurement of the variables.
+##### `bin_variable` is a function that computes the measurement of the variables.
 
 Motivation
 ----------
