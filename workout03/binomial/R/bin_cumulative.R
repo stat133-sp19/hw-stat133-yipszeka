@@ -49,7 +49,8 @@ bin_cumulative <- function(trials=5, prob=0.5) {
 
 #' @export
 plot.bincum <- function(x,...){
-  y <- ggplot(x, aes(x=x$success,y=x$cumulative))+
+
+  y <- ggplot2::ggplot(x, aes(x=x$success,y=x$cumulative))+
     geom_point(size=3,shape=11)+
     geom_line(color='purple')+labs(title="bin_cumulative graph",x="successes ",y="probability ")+theme_linedraw()
   return(y)

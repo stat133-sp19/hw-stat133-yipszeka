@@ -4,7 +4,7 @@ Title: binomial distribution
 Version: 0.1.0
 Author: Sze Ka Yip
 Maintainer: Sze Ka Yip <joycejyka8@berkeley.edu>
-Description: Functions to compute binomial distribution, caculatue the probability,means,variance,choose,cumlative value.
+Description: The package 'bimonial' is a implements functions for calculating probabilities of a binomial random variable, and related calculatiion such as the probability distribution, the expected values, variance, related cdf and pdf graphs. 
 Depends:
     R (>= 3.1.0)
 License: GPL-2

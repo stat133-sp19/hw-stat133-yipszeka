@@ -2,17 +2,17 @@
 Overview
 --------
 
-`binomial` is a minimal R package that provides functions to calculate the binomial probabilities and other properties,for example, cumulative probability functions, probability density functions, means, variances, kurtosis, and meansurements of the variable.
+"binomial" is a package that provides functions to calculate the binomial probability distribution functions
 
- `bin_choose` is a function that computes the number of success in given trials
+### `bin_choose` is a function that computes the number of success in given trials
 
-`bin_probability` is a function that computes the probability of getting successes in given trials.
+### `bin_probability` is a function that computes the probability of getting successes in given trials.
 
-`bin_distribution` is a function that computes the probability distribution.
+### `bin_distribution` is a function that computes the probability distribution.
 
-`bin_cumulative` is a function that computes the cumulative distribution.
+### `bin_cumulative` is a function that computes the cumulative distribution.
 
- `bin_variable` is a function that computes the measurement of the variables.
+### `bin_variable` is a function that computes the measurement of the variables.
 
 Motivation
 ----------
@@ -31,9 +31,13 @@ Install the development version from GitHub via the package `"devtools"`:
 #install.packages("devtools") 
 # install "binomial" (without vignettes)
 
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial")
+#> Skipping install of 'binomial' from a github remote, the SHA1 (d1ae35b3) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial", build_vignettes = TRUE)
+#> Skipping install of 'binomial' from a github remote, the SHA1 (d1ae35b3) has not changed since last install.
+#>   Use `force = TRUE` to force installation
 ```
 
 Usage
