@@ -23,7 +23,12 @@ knitr::opts_chunk$set(
 ### `bin_distribution` is a function that computes the probability distribution.
 ### `bin_cumulative` is a function that computes the cumulative distribution.
 ### `bin_variable` is a function that computes the measurement of the variables.
-
+###Functions `bin_mean()`, `bin_variance()`, `bin_mode()`, `bin_skewness()`, `bin_kurtosis()` calculate the measurments of the binomial functions.
+###`plot.bincum()` method for a "bincum" object to graph the cumulative distribution
+###`plot.bindis()` method for a "bindis" object to graphs a barplot to display the probability histogram
+###`print.binvar()` method for a "binvar" object to nicely print the content
+###`summary.binvar()` method for a "binvar" object to get a full summary description
+###`print.summary.binvar()` method for a "summary.binvar" object to nicely print the contents
 
 
 ## Motivation
@@ -40,11 +45,10 @@ Install the development version from GitHub via the package `"devtools"`:
 
 # development version from GitHub:
 #install.packages("devtools") 
-# install "binomial" (without vignettes)
-
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial")
-# install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial", build_vignettes = TRUE)
+#install "binomial" (without vignettes)
+#devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial")
+#install "binomial" (with vignettes)
+#devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial", build_vignettes = TRUE)
 
 
 ```
@@ -82,9 +86,21 @@ bin_variable(10,0.3)
 a <-summary(bin_variable(trials = 10, p = 0.3))
 a
 
+```
+###Functions of meansures functions
+```{r}
+
+library(binomial)
+
+bin_mean(10, 0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+
+bin_skewness(10, 0.3)
+
+bin_kurtosis(10, 0.3)
+
 
 ```
-
-
 
 

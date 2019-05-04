@@ -36,3 +36,12 @@ library(binomial)
 bin_variable(trials = 10, p = 0.3)
 summary(bin_variable(trials = 10, p = 0.3))
 
+
+## ------------------------------------------------------------------------
+
+bin_mean(10,0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+bin_skewness(10, 0.3)
+bin_kurtosis(10, 0.3)
+

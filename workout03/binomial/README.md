@@ -4,15 +4,27 @@ Overview
 
 "binomial" is a package that provides functions to calculate the binomial probability distribution functions
 
-##### `bin_choose` is a function that computes the number of success in given trials
+### `bin_choose` is a function that computes the number of success in given trials
 
-##### `bin_probability` is a function that computes the probability of getting successes in given trials.
+### `bin_probability` is a function that computes the probability of getting successes in given trials.
 
-##### `bin_distribution` is a function that computes the probability distribution.
+### `bin_distribution` is a function that computes the probability distribution.
 
-##### `bin_cumulative` is a function that computes the cumulative distribution.
+### `bin_cumulative` is a function that computes the cumulative distribution.
 
-##### `bin_variable` is a function that computes the measurement of the variables.
+### `bin_variable` is a function that computes the measurement of the variables.
+
+### Functions `bin_mean()`, `bin_variance()`, `bin_mode()`, `bin_skewness()`, `bin_kurtosis()` calculate the measurments of the binomial functions.
+
+### `plot.bincum()` method for a "bincum" object to graph the cumulative distribution
+
+### `plot.bindis()` method for a "bindis" object to graphs a barplot to display the probability histogram
+
+### `print.binvar()` method for a "binvar" object to nicely print the content
+
+### `summary.binvar()` method for a "binvar" object to get a full summary description
+
+### `print.summary.binvar()` method for a "summary.binvar" object to nicely print the contents
 
 Motivation
 ----------
@@ -30,14 +42,9 @@ Install the development version from GitHub via the package `"devtools"`:
 # development version from GitHub:
 #install.packages("devtools") 
 # install "binomial" (without vignettes)
-
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial")
-#> Skipping install of 'binomial' from a github remote, the SHA1 (d1ae35b3) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial")
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial", build_vignettes = TRUE)
-#> Skipping install of 'binomial' from a github remote, the SHA1 (d1ae35b3) has not changed since last install.
-#>   Use `force = TRUE` to force installation
+#devtools::install_github("stat133-sp19/hw-stat133-yipszeka/workout03/binomial", build_vignettes = TRUE)
 ```
 
 Usage
@@ -120,4 +127,24 @@ a
 #> -mode: 3 
 #> -skewness: 0.2760262 
 #> -kurtosis -0.1238095
+```
+
+### Functions of meansures functions
+
+``` r
+
+library(binomial)
+
+bin_mean(10, 0.3)
+#> [1] 3
+bin_variance(10, 0.3)
+#> [1] 2.1
+bin_mode(10, 0.3)
+#> [1] 3
+
+bin_skewness(10, 0.3)
+#> [1] 0.2760262
+
+bin_kurtosis(10, 0.3)
+#> [1] -0.1238095
 ```
